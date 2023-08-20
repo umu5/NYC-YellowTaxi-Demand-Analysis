@@ -7,6 +7,8 @@
 
 import os
 from urllib.request import urlretrieve
+import pandas as pd
+from pandas import read_csv
 
 print(os.getcwd())
 
@@ -48,3 +50,22 @@ def year_data(year, months):
 # download Yellow taxi records from 2022 January - 2023 May  (post Covid data)
 year_data('2022', range(1,13))
 year_data('2023', range(1,6))
+
+print('\nDone with downloading yellow taxi data. Now begin downloading weather' 
+      'data\n')
+
+#use this link and download weather data for 2022-01-01 to 2023-05-31
+# this is daily summary
+# # # Now downloading weather data
+
+URL_TEMPLATE2 = "https://www.ncei.noaa.gov/orders/cdo/3427399.csv"
+
+# download weather data csv and save it to data/weather/ and also convert it to
+# parquet file
+urlretrieve(URL_TEMPLATE2, '../data/weather/weather_data.csv')
+df = pd.read_csv('../data/weather/weather_data.csv')
+df.to_parquet('../data/weather/weather_data.parquet')
+print('weather data successfully downloaded and converted to parquet file')
+
+# now delete that csv file
+os.remove('../data/weather/weather_data.csv')
