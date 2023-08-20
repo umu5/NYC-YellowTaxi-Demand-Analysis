@@ -3,7 +3,7 @@
 # error.
 
 # run this file from root durectory of the project such as using command
-# `python scripts/landingLayer.py`
+# `python scripts/download.py`
 
 import os
 from urllib.request import urlretrieve
@@ -59,13 +59,12 @@ print('\nDone with downloading yellow taxi data. Now begin downloading weather'
 # # # Now downloading weather data
 
 URL_TEMPLATE2 = "https://www.ncei.noaa.gov/orders/cdo/3427399.csv"
-
 # download weather data csv and save it to data/weather/ and also convert it to
 # parquet file
-urlretrieve(URL_TEMPLATE2, '../data/weather/weather_data.csv')
-df = pd.read_csv('../data/weather/weather_data.csv')
-df.to_parquet('../data/weather/weather_data.parquet')
+urlretrieve(URL_TEMPLATE2, "data/weather/weather_data.csv")
+df = pd.read_csv('data/weather/weather_data.csv')
+df.to_parquet('data/weather/weather_data.parquet')
 print('weather data successfully downloaded and converted to parquet file')
 
 # now delete that csv file
-os.remove('../data/weather/weather_data.csv')
+os.remove('data/weather/weather_data.csv')
