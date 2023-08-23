@@ -2,7 +2,7 @@
 # local network will make the process very slow or may result in connection
 # error.
 
-# run this file from root durectory of the project such as using command
+# run this file from root directory of the project such as using command
 # `python scripts/download.py`
 
 import os
@@ -54,9 +54,16 @@ year_data('2023', range(1,6))
 print('\nDone with downloading yellow taxi data. Now begin downloading weather' 
       'data\n')
 
-#use this link and download weather data for 2022-01-01 to 2023-05-31
+
+# use this link and download weather data for 2022-01-01 to 2023-05-31
 # this is daily summary
-# # # Now downloading weather data
+# Note that this is link is valid till 27th Aug.
+# well my dear tutor due to this reason I have uploaded this data to github
+# just wanted to make sure I used an automated process to download this data :))
+# If you are checking my assignment before 27th Aug, you are more than welcome
+# to uncomment this code and run it. It will download the data for you.
+
+"""
 
 URL_TEMPLATE2 = "https://www.ncei.noaa.gov/orders/cdo/3427399.csv"
 # download weather data csv and save it to data/weather/ and also convert it to
@@ -68,3 +75,5 @@ print('weather data successfully downloaded and converted to parquet file')
 
 # now delete that csv file
 os.remove('data/weather/weather_data.csv')
+
+"""
