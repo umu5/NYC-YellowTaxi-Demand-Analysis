@@ -25,3 +25,8 @@ for **Yellow taxi** data. For **weather** data it outputs to `data/weather_curat
 3. `model.ipynb`: This notebook is used to conduct modelling on the curated data and outputs any plots produced to the `plots` directory.
 
 **NOTE** that `.ipynb` files are considered running from their own directory. So, files paths to store data/plots are relative to the notebook directory. **Modify** paths as per your specification if needed.
+
+
+# NOTE:
+### NYC zones data is taken from MAST30034 Tutorial 2 and can be found in data/taxi_zones
+### Weather data URL in scripts/download.py expires by 27th August, so, for the feasibility landing weather data can be found in data/weather in this repo. However, you can request another link from this website https://www.ncei.noaa.gov/cdo-web/search
