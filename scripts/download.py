@@ -60,8 +60,6 @@ print('\nDone with downloading yellow taxi data. Now begin downloading weather'
 # Note that this is link is valid till 27th Aug.
 # well my dear tutor due to this reason I have uploaded this data to github
 # just wanted to make sure I used an automated process to download this data :))
-# If you are checking my assignment before 27th Aug, you are more than welcome
-# to uncomment this code and run it. It will download the data for you.
 
 """
 
