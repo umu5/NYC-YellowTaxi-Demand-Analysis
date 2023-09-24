@@ -1,7 +1,6 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=11547430&assignment_repo_type=AssignmentRepo)
-# MAST30034 Project 1 README.md
+# An end to end Data Science Project
 - Name: `Muhammad Usman`
-- Student ID: `1229086`
 
 **Research Goal:** Determinants of Yellow Taxi Demand in New York City
 
@@ -28,5 +27,5 @@ for **Yellow taxi** data. For **weather** data it outputs to `data/weather_curat
 
 
 # NOTE:
-### NYC zones data is taken from MAST30034 Tutorial 2 and can be found in data/taxi_zones
+### NYC zones data is taken from University of Melbourne MAST30034 Tutorial 2 and can be found in data/taxi_zones
 ### Weather data URL in scripts/download.py expires by 27th August, so, for the feasibility landing weather data can be found in data/weather in this repo. However, you can request another link from this website https://www.ncei.noaa.gov/cdo-web/search
