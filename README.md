@@ -6,6 +6,8 @@
 
 **Timeline:** The timeline for the research area is 2022 - 2023 (Post COVID-19)
 
+**Project Report** You can find the final project report in diretory `report`
+
 ## Please run all the files in order!
 
 ### Move to the `scripts` directory and run the following file to download data
